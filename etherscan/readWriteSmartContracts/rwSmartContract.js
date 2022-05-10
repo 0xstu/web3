@@ -1,4 +1,4 @@
-const keys = require('./config');
+const keys = require('../keys');
 const ethers = require("ethers")
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
@@ -19,6 +19,8 @@ async function main() {
     const provider = new ethers.providers.WebSocketProvider(node);
 
     let wallet = new ethers.Wallet(privKey, provider);
+    console.log("Using wallet address " + wallet.address);
+    return;
 }
 
 main();
