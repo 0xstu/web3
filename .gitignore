@@ -7,3 +7,4 @@ etherscan/.DS_Store
 .vscode/extensions.json
 coinbaseAPI/accounts.json
 coinbaseAPI/transactions.json
+ensite/client/.env
